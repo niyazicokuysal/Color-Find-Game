@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <h1>WELCOME TO <a style="font-size: 50px;">FIND-COLOR</a> GAME</h1>
+        <h4>Your goal is the match the collors between RUN and GOAL by clicking in correct time.</h4>
+    </section>
+
+    <section id="game">
+        <div class="port">
+            <div class="field" id="run"></div>
+            <h2>RUN</h2>
+        </div>
+        
+        <div class="port" style="margin-left: 120px;">
+            <div class="field" id="goal"></div>
+            <h2>GOAL</h2>
+        </div>
+    </section>
+
+    <section id="footer">
+        <form id="form">
+            <h4 style="margin: 10px 0;">Choose a color scheme and press start</h4>
+            <select name="select" id="sele">
+                <option value="0">Red</option>
+                <option value="1">Green</option>
+                <option value="2">Blue</option>
+            </select>
+            <input type="button" id="strt" value="Start" onclick="startP()">
+        </form>
+        <div id="label"></div>
+    </section>
+</body>
+</html>
